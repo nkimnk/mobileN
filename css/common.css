@@ -30,13 +30,14 @@ body { font:400 14px/1.6 'Poppins', sans-serif;
     font:600 13px/38px 'Open Sans', Roboto; height: 38px;
 }
 
-#header .topmenu .membership { float: left;}
+#header .topmenu .membership { float: left; font-weight: bold;}
 #header .topmenu .sns { float: right; margin-right: 10px;}
 #header .topmenu .sns .languages { 
     display: inline-block; 
     position: relative;
     padding-right: 15px;
     margin-right: 30px;
+    font-weight: bold;
 }
 #header .topmenu .sns .languages i { 
     padding-left: 5px;
@@ -49,19 +50,29 @@ body { font:400 14px/1.6 'Poppins', sans-serif;
 #header .topmenu .sns .languages:hover ul {display: block;} 
 #header .topmenu .sns .topicon { display: inline-block;
     margin: 0 10px 20px; line-height: 38px;
-    font-size: 14px;
+    font-size: 13px;
 }
+#nav { padding: 0 15px;}
+#header .logonav { padding: 0px 30px;}
+#header .logonav h1 { 
+    float: left; 
+    font-size: 42px; 
+    color: #f1f1f1;
+    height: 100px;
+    padding: 31px 30px 33px 0;
+    font-weight: bold;
 
-#header .logonav { padding: 30px 0px;}
-#header .logonav h1 { float: left; font-size: 42px;}
+}
 #header .logonav #nav { 
     float: right;
     font-size: 14px;
 }
 #nav .depth1 > li { 
     float: left; 
-    padding: 0px 15px 40px;
+    padding: 25px 15px;
     position: relative; 
+    color: #f1f1f1;
+    font-weight: bold;
 }
 #nav .depth1 > li i { 
     padding-left: 5px;
@@ -73,6 +84,15 @@ body { font:400 14px/1.6 'Poppins', sans-serif;
     background: #fff; display: none;
     color: #505050;
 }
+#nav .depth2 li { 
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #505050;
+    font-size: 14px;
+    padding: 3px 20px;
+}
+
+
 
 .membership a::after { 
     content: '/';
@@ -94,19 +114,24 @@ body { font:400 14px/1.6 'Poppins', sans-serif;
 #footer { 
     font-size: 14px;
     color: #e1e1e1;
+    clear: both;
 }
 #footer .footerbox .widget { 
-
+    font-weight: 700;
 }
 #footer .footerbox h4 { 
     font-size: 14px;
     color: #eaeaea;
-    margin: 0px 30px;
+    margin: 0 0 30px;
 }
 #footer .footerbox { padding: 40px 0px;}
+#footer .menubt { overflow: hidden;
+    padding: 40px 0;
+}
 #footer .widget { 
     color: #e1e1e1;
-    display: inline-block;
+    float: left;
+    width: 20%;    
 }
 #footer .topfooter {
     background-color: #968783;
@@ -114,20 +139,43 @@ body { font:400 14px/1.6 'Poppins', sans-serif;
 
 #footer .bottomfooter {
     background-color: #625654;
+    padding: 40px 0;
 }
-#footer .logocopyft { }
+#footer .logocopyft { 
+    position: relative;
+}
 #footer .logocopyft .logobt { 
     display: inline-block;
+    padding: 0 15px;
+}
+#footer .logocopyft .logobt span { 
     font-size: 30px;
     padding: 3px 15px;
     border: 2px solid #eaeaea;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
+    color: #eaeaea;
+    border-color: #eaeaea;
+    font-weight: 700;
 }
-#footer .logocopyft .copybt { }
+#footer .logocopyft .copybt { 
+    display: inline-block;
+    padding: 0 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #e1e1e1;
+
+}
 
 
 #footer .footerbox .bottomfooter .socialicon {
-    display: inline-block; float: right;
     padding: 0 15px;
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 16px;
+    /* font-weight: 700; */
+    color: #e1e1e1;
+    border-radius: 4px;
 }
-
+#footer .footerbox .bottomfooter .socialicon a{ 
+    padding: 0 10px;
+}
