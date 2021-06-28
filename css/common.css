@@ -124,7 +124,7 @@ body { font:400 14px/1.6 'Poppins', sans-serif;
     color: #eaeaea;
     margin: 0 0 30px;
 }
-#footer .footerbox { padding: 40px 0px;}
+#footer .footerbox { padding: 0px 0px 40px;}
 #footer .menubt { overflow: hidden;
     padding: 40px 0;
 }
